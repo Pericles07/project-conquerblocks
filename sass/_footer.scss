@@ -1,0 +1,20 @@
+@use '_variables' as v;
+@use 'mixins' as *;
+
+
+.footer{
+    background-color: v.$black;
+    padding: 16px;
+    text-align: center;
+    @include breakpoint(tablet){
+                padding: 30px;
+            }
+
+    &-description{
+        color: v.$white;
+        @include breakpoint(tablet){
+                font-size: 18px;
+            }
+
+    }
+}

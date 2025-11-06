@@ -1,0 +1,60 @@
+@use '_variables' as v;
+@use 'mixins' as *;
+
+ .container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+  font-family: v.$font-primary;
+
+  h1,h2,h3{
+    font-family: v.$font-title;
+  }
+}
+.button{
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 50px;
+  background: v.$background;
+  color: v.$white;
+  border-radius: 20px;
+  &:hover{
+    color: v.$black;
+    background: v.$blue-light;
+    border: 1px solid v.$black;
+  }
+  @include breakpoint(tablet){
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+  @include breakpoint(desktop){
+    font-size: 24px;
+    padding: 20px 60px;
+  }
+} 
+
+.button-2{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background: v.$dark-blue;
+  color: v.$white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  &:hover{
+    background: v.$background;
+    color: v.$black;
+    border: 1px solid v.$black;
+  }
+  @include breakpoint(tablet){
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+  @include breakpoint(desktop){
+    font-size: 24px;
+    padding: 20px 60px;
+  }
+} 
+
+  

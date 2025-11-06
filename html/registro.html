@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro | conquer Blocks</title>
+  <meta name="description" content="Registrate para formar parte de nuestros cursos">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <figure class="logo">
+        <img  src="/img/comunes/Conquer-Blocks-logo.avif" alt="Logotipo de conquer Crypto">
+      </figure>
+      <nav class="navprincipal">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./quienes-somos.html">Quienes somos</a></li>
+          <li><a href="./cursos.html">Cursos</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li>Registro</li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-formulary">
+      <div class="formulary">
+        <h1 class="formulary-title">Regístrate</h1>
+        <legend class="legend-title">Para poder acceder a nuestra academia necesitamos que te registres</legend>
+          <form action="post"  enctype="multipart/form-data">
+            <p class="formulary-description">
+              <label for="name">Nombre completo</label>
+              <input class="input" type="text" name="name" id="name">
+            </p>
+
+            <p class="formulary-description">
+              <label for="birthady">Fecha de nacimiento</label>
+              <input class="input" type="date" name="birthady" id="birthady">
+            </p>
+
+            <p class="formulary-description">
+              <label for="email">Email</label>
+              <input class="input" type="email" name="email" id="email" required>
+            </p>
+        
+            <p class="formulary-description">
+              <label for="address">Dirección</label>
+              <input class="input"  type="text" name="address" id="address">
+            </p>
+
+            <p class="formulary-description">
+              <label for="web">Pagina web</label>
+              <input class="input" type="url" name="web" id="web">
+            </p>
+
+            <p class="formulary-description">
+              <label for="photo">Foto</label>
+              <input class="input" type="file" name="photo" id="photo">
+            </p>
+
+            <p class="formulary-description">
+              <label for="bio">Biografia</label>
+              <textarea class="input" name="bio" id="bio" cols="30" rows="5"></textarea>
+            </p>
+
+            <p class="formulary-description">
+              <button class="button-2">Enviar</button>
+              <input class="button-2" type="reset" value="Borrar formulario">
+            </p>
+
+          </form>
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-description">© Conquer Blocks 2025 - <a class="button" href="./aviso-legal.html">Aviso legal</a></p>
+    </footer>
+  </div>
+
+
+<script type="module" src="../main.js"></script>
+</body>
+
+</html>

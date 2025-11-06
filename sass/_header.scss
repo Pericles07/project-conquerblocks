@@ -1,0 +1,66 @@
+@use 'variables' as v;
+@use 'mixins' as *;
+
+.header{
+    position: fixed;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color:v.$blue-light;
+    @include breakpoint(desktop){
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 50px;
+        }
+
+    .logo{
+        text-align: center;
+        @include breakpoint(desktop){
+        padding-top: 10px;
+        }
+        
+        img{
+            width: 200px;
+            @include breakpoint(tablet){
+                width: 300px;
+            }
+
+        }        
+    }
+
+    .navprincipal{
+        ul{
+            display: flex;
+            list-style: none;
+            font-size: 10px;
+            gap: 5px;
+            padding-top: 10px;
+            justify-content: center;
+            @include breakpoint(tablet){
+                font-size: 16px;
+                gap: 15px;
+                padding-top: 15px;
+            }
+
+            li{
+                color: v.$green;
+            }
+
+            a{
+                text-decoration: none;
+                color: v.$white;
+                &:hover{
+                    color: v.$green;
+                }
+            }
+        }
+    }
+}
+    
+
+    
+
+    
+
